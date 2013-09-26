@@ -42,18 +42,4 @@ public class Handler extends SimpleChannelUpstreamHandler {
         //e.getCause().printStackTrace();
         System.out.println("exceptionCaught");
     }
-    /*@Override
-    public void writeComplete(ChannelHandlerContext ctx, WriteCompletionEvent e)
-            throws Exception {
-        super.writeComplete(ctx, e);
-        this.writtenBytes.addAndGet(e.getWrittenAmount());
-    }
-    @Override
-    public void channelClosed(ChannelHandlerContext ctx, ChannelStateEvent e)
-            throws Exception {
-        super.channelClosed(ctx, e);
-        System.out.println(this.id + ctx.getChannel() + " -> sent: " +
-                           this.getWrittenBytes() + "b, recv: " +
-                           this.getReadBytes() + "b");
-    }*/
 }
